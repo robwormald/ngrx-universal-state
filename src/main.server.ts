@@ -23,12 +23,9 @@ app.get('/', function(req, res){
 
 	renderModuleFactory(AppServerModuleNgFactory, {
 		document: readFileSync('public/index.html').toString(),
-		extraProviders: [
-			{ provide: INITIAL_STATE, useValue: {}}
-		],
-		url: '/'
-
-	})
+		extraProviders: [],
+    url: '/'
+  })
 	.then(body => {
 		console.log('returning response to client');
 		res.send(body);
