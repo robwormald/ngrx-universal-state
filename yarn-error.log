@@ -1,0 +1,57 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/0.27.5_1/libexec/bin/yarn.js add angular/core-builds angular/common-builds angular/compiler-builds angular/compiler-cli-builds angular/platform-browser-builds angular/platform-server-builds angular/platform-browser-dynamic-builds angular/http-builds angular/animations-builds
+
+PATH: 
+  /Users/robwormald/Library/google-cloud-sdk/bin:/Users/robwormald/bin:/usr/local/git/current/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/Applications/Wireshark.app/Contents/MacOS
+
+Yarn version: 
+  0.27.5
+
+Node version: 
+  6.9.4
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "ngrx-universal-state",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "dependencies": {
+      "@angular/animations": "next",
+      "@angular/common": "next",
+      "@angular/compiler": "next",
+      "@angular/compiler-cli": "next",
+      "@angular/core": "next",
+      "@angular/http": "next",
+      "@angular/platform-browser": "next",
+      "@angular/platform-browser-dynamic": "next",
+      "@angular/platform-server": "next",
+      "@ngrx/store": "^4.0.3",
+      "rxjs": "^5.4.3",
+      "typescript": "2.3",
+      "webpack": "^3.5.6",
+      "zone.js": "^0.8.17"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Invariant Violation: expected hoisted manifest
+      at invariant (/usr/local/Cellar/yarn/0.27.5_1/libexec/lib/yarn-cli.js:1132:15)
+      at PackageHoister.init (/usr/local/Cellar/yarn/0.27.5_1/libexec/lib/yarn-cli.js:79999:9)
+      at PackageLinker.getFlatHoistedTree (/usr/local/Cellar/yarn/0.27.5_1/libexec/lib/yarn-cli.js:46404:66)
+      at /usr/local/Cellar/yarn/0.27.5_1/libexec/lib/yarn-cli.js:46411:35
+      at next (native)
+      at step (/usr/local/Cellar/yarn/0.27.5_1/libexec/lib/yarn-cli.js:91:30)
+      at /usr/local/Cellar/yarn/0.27.5_1/libexec/lib/yarn-cli.js:109:14
+      at Promise.F (/usr/local/Cellar/yarn/0.27.5_1/libexec/lib/yarn-cli.js:29304:28)
+      at /usr/local/Cellar/yarn/0.27.5_1/libexec/lib/yarn-cli.js:88:12
+      at PackageLinker.copyModules (/usr/local/Cellar/yarn/0.27.5_1/libexec/lib/yarn-cli.js:46644:7)
