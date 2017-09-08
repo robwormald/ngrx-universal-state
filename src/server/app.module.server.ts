@@ -5,7 +5,10 @@ import {AppClientModule} from '../client/app.module.client'
 import {AppComponent} from '../shared/app.component'
 import {Store, INITIAL_STATE} from '@ngrx/store'
 
-
+//DANGER WILL ROBINSON
+//DO NOT USE THIS IN PRODUCTION
+//IT WILL KILL YOU AND IT WILL HURT THE WHOLE TIME YOU ARE DYING
+//TODO(security): use Sanitizer API?
 function serializeNgRxState(state){
 	return `window.__NGRX_INITIAL_STATE__ = ${JSON.stringify(state).replace(/</g, '\\u003c')}`
 }
